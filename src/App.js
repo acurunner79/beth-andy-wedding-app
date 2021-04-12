@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import {Switch, Route} from "react-router-dom"
 import Venue from'./components/Venue'
 import {createGlobalStyle} from 'styled-components';
+import Countdown from './components/Countdown'
 
 const GlobalStlye = createGlobalStyle`
  
@@ -44,8 +44,9 @@ function App() {
     <div className="App">
       <GlobalStlye />
       <h1>Save the date!</h1>
-      <img className='main-image' src="https://res.cloudinary.com/acurunner79/image/upload/v1617227539/IMG_0209_rdvxy8.jpg"/>
+      <img className='main-image' src="https://res.cloudinary.com/acurunner79/image/upload/v1617227539/IMG_0209_rdvxy8.jpg" alt='Beth & Andy'/>
       <h2>Beth & Andy Wedding</h2>
+      <Countdown />
       <Switch>
         <Route exact path='/venue'>
           <Venue/>
