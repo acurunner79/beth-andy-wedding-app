@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import './countdown.css'
 
 
 const Countdown = () => {
@@ -37,13 +38,13 @@ const Countdown = () => {
         }
     
         timerComponents.push(
-          <span>
+          <span className='counter'>
             {timeLeft[interval]} {interval}{" "}
           </span>
         );
       });
       return (
-        <div className='counter'>
+        <div>
           {timerComponents.length ? timerComponents : <span>Time's up!</span>}
         </div>
       );
