@@ -45,15 +45,15 @@ function App() {
   return (
     <div className="App">
       <GlobalStlye />
-      <Nav />
-      <Countdown />
+        <Nav />
+        <Countdown />
       <Switch>
-      <Route exact path ='/'>
-      <h1>Save the date!</h1>
-      <h2>April 30, 2022</h2>
-      <img className='main-image' src="https://res.cloudinary.com/acurunner79/image/upload/v1617227539/IMG_0209_rdvxy8.jpg" alt='Beth & Andy'/>
-      <h2>We're engaged!</h2>
-      </Route>
+        <Route exact path ='/'>
+          <h1>We're engaged!</h1>
+          <h2>Save the date!</h2>
+          <img className='main-image' src="https://res.cloudinary.com/acurunner79/image/upload/v1617227539/IMG_0209_rdvxy8.jpg" alt='Beth & Andy'/>
+          <h2>April 30, 2022</h2>
+        </Route>
         <Route exact path='/venue'>
           <Venue/>
         </Route>

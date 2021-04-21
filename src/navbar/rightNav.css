@@ -38,8 +38,8 @@ div.right-nav.open {
 }
 
 .right-nav.open, li {
-    color: #ff49f2;
-    text-decoration: none;
+   color: #ff49f2;
+   text-decoration: none;
  }
 
  @media (min-width: 768px) {

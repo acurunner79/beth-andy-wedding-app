@@ -4,15 +4,11 @@ import Hamburger from './Hamburger'
 import RightNav from './RightNav'
 import './nav.css'
 
-//const Nav = styled.nav`
-//
-//`
 
 const Nav = () => {
     return ( 
         <div className="_nav">
            <Link>
-              
            </Link>
            <div className="menu-bar">
               <RightNav />
