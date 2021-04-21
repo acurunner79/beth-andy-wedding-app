@@ -12,8 +12,8 @@ body {
   text-align: center;
   font-family: 'Red Hat Text';
   /* background-image: url("https://res.cloudinary.com/acurunner79/image/upload/c_scale,w_1024/v1618265655/378-3784436_disney-castle-logo-png-disney-castle-logo-transparent_yiuqg3.png"); */
-  background-repeat: no-repeat;
-  background-position: center;
+  // background-repeat: no-repeat;
+  // background-position: center;
 }
 
 h1 {
@@ -46,13 +46,13 @@ function App() {
     <div className="App">
       <GlobalStlye />
         <Nav />
-        <Countdown />
       <Switch>
         <Route exact path ='/'>
           <h1>We're engaged!</h1>
           <h2>Save the date!</h2>
           <img className='main-image' src="https://res.cloudinary.com/acurunner79/image/upload/v1617227539/IMG_0209_rdvxy8.jpg" alt='Beth & Andy'/>
           <h2>April 30, 2022</h2>
+        <Countdown />
         </Route>
         <Route exact path='/venue'>
           <Venue/>
