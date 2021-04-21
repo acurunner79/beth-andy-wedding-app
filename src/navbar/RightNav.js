@@ -8,6 +8,7 @@ const RightNav = (props) => {
   
     return (     
     <div className="links-container">
+      <ul>
         <Link to="/">
           <li className="links" onClick={props.handleClick}>
             Home
@@ -28,7 +29,8 @@ const RightNav = (props) => {
             <li className="links" onClick={props.handleClick}>
               RSVP
             </li>
-          </Link>       
+          </Link>  
+          </ul>     
     </div>
     )
 }
