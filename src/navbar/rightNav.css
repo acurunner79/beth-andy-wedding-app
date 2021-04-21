@@ -44,6 +44,7 @@ div.right-nav.open {
 
  @media (min-width: 768px) {
      .right-nav {
+         display: none;
          width: 300px;
          right: -300px;
      }
