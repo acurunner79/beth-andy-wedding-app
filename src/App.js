@@ -50,7 +50,7 @@ function App() {
       <Switch>
       <Route exact path ='/'>
       <h1>Save the date!</h1>
-      <h2>April 22, 2022</h2>
+      <h2>April 30, 2022</h2>
       <img className='main-image' src="https://res.cloudinary.com/acurunner79/image/upload/v1617227539/IMG_0209_rdvxy8.jpg" alt='Beth & Andy'/>
       <h2>We're engaged!</h2>
       </Route>
