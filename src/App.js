@@ -4,9 +4,11 @@ import {createGlobalStyle} from 'styled-components';
 import Countdown from './components/Countdown'
 import Nav from './navbar/Nav'
 
+
 const GlobalStlye = createGlobalStyle`
  
 body {
+  
   /* background: #070054; */
   /* background: linear-gradient(120deg, rgb(255, 255, 255) 0%, rgba(183, 176, 176, 1) 35%, rgb(255, 73, 242) 110%); */
   text-align: center;
@@ -17,6 +19,7 @@ body {
 }
 
 h1 {
+  padding-top: 60px;
   color: #ff49f2;
   font-size: 125px;
   background: -webkit-linear-gradient(#ff49f2, #070054);

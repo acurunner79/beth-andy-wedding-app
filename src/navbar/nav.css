@@ -34,6 +34,7 @@ div.links-container li.links {
 @media (min-width: 1024px) {
   .nav-ul {
     margin: 0;
+    padding: 0;
     list-style: none;
     display: flex;
     width: 100vw;
@@ -55,10 +56,13 @@ div.links-container li.links {
     flex-direction: row;
     justify-content: space-between;
     height: 15vh;
-    width: 100vw;
+    /* width: 120vw; */
     padding-bottom: 0;
     margin: 0;
-    padding-right: 20px;
+    /* padding-right: 20px; */
     text-decoration: none !important;
+  }
+  img.center-logo{
+    display: flex;
   }
 }
