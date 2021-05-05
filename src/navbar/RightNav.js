@@ -19,7 +19,7 @@ const RightNav = (props) => {
             Venue
           </li>
           </Link>
-            <img className="links" src="https://res.cloudinary.com/acurunner79/image/upload/c_scale,w_349/v1619022886/website_logo_transparent_background_3_tzsfoz.png" alt='nav logo'/>
+            <img className="center-logo" src="https://res.cloudinary.com/acurunner79/image/upload/v1620244789/website_logo_transparent_background_5_srh2x0.png" alt='nav logo'/>
           <Link to="/registry">
             <li className="links" onClick={props.handleClick}>
               Registry

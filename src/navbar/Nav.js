@@ -6,12 +6,12 @@ import "./nav.css";
 
 const Nav = () => {
   return (
-   //  <div className="_nav">
+     <div className="_nav">
       <div className="menu-bar">
         <RightNav />
-        <Hamburger />
       </div>
-   //  </div>
+        <Hamburger />
+     </div>
   );
 };
 
