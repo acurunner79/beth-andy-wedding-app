@@ -3,6 +3,8 @@ import Venue from'./components/Venue'
 import {createGlobalStyle} from 'styled-components';
 import Countdown from './components/Countdown'
 import Nav from './navbar/Nav'
+import Rsvp from './components/Rsvp'
+import Registry from './components/Registry'
 
 
 const GlobalStlye = createGlobalStyle`
@@ -36,6 +38,14 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 
+h3 {
+  color: #ff49f2;
+  font-size: 25px;
+  background: -webkit-linear-gradient(#ff49f2, #070054);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .main-image{
   /* margin-top: 200px; */
   max-width: 300px;
@@ -59,6 +69,12 @@ function App() {
         </Route>
         <Route exact path='/venue'>
           <Venue/>
+        </Route>
+        <Route exact path='/rsvp'>
+          <Rsvp />
+        </Route>
+        <Route exact path='/registry'>
+          <Registry />
         </Route>
       </Switch>
     </div>
