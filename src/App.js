@@ -3,20 +3,25 @@ import Venue from'./components/Venue'
 import {createGlobalStyle} from 'styled-components';
 import Countdown from './components/Countdown'
 import Nav from './navbar/Nav'
+import Rsvp from './components/Rsvp'
+import Registry from './components/Registry'
+
 
 const GlobalStlye = createGlobalStyle`
  
 body {
+  
   /* background: #070054; */
   /* background: linear-gradient(120deg, rgb(255, 255, 255) 0%, rgba(183, 176, 176, 1) 35%, rgb(255, 73, 242) 110%); */
   text-align: center;
   font-family: 'Red Hat Text';
   /* background-image: url("https://res.cloudinary.com/acurunner79/image/upload/c_scale,w_1024/v1618265655/378-3784436_disney-castle-logo-png-disney-castle-logo-transparent_yiuqg3.png"); */
-  background-repeat: no-repeat;
-  background-position: center;
+  // background-repeat: no-repeat;
+  // background-position: center;
 }
 
 h1 {
+  padding-top: 60px;
   color: #ff49f2;
   font-size: 125px;
   background: -webkit-linear-gradient(#ff49f2, #070054);
@@ -28,6 +33,14 @@ h1 {
 h2 {
   color: #ff49f2;
   font-size: 45px;
+  background: -webkit-linear-gradient(#ff49f2, #070054);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3 {
+  color: #ff49f2;
+  font-size: 25px;
   background: -webkit-linear-gradient(#ff49f2, #070054);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -45,17 +58,23 @@ function App() {
   return (
     <div className="App">
       <GlobalStlye />
-      <Nav />
-      <Countdown />
+        <Nav />
       <Switch>
-      <Route exact path ='/'>
-      <h1>Save the date!</h1>
-      <h2>April 30, 2022</h2>
-      <img className='main-image' src="https://res.cloudinary.com/acurunner79/image/upload/v1617227539/IMG_0209_rdvxy8.jpg" alt='Beth & Andy'/>
-      <h2>We're engaged!</h2>
-      </Route>
+        <Route exact path ='/'>
+          <h1>We're engaged!</h1>
+          <h2>Save the date!</h2>
+          <img className='main-image' src="https://res.cloudinary.com/acurunner79/image/upload/v1617227539/IMG_0209_rdvxy8.jpg" alt='Beth & Andy'/>
+          <h2>April 30, 2022</h2>
+        <Countdown />
+        </Route>
         <Route exact path='/venue'>
           <Venue/>
+        </Route>
+        <Route exact path='/rsvp'>
+          <Rsvp />
+        </Route>
+        <Route exact path='/registry'>
+          <Registry />
         </Route>
       </Switch>
     </div>

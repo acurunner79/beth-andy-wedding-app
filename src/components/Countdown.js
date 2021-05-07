@@ -6,7 +6,7 @@ const Countdown = () => {
 
     const calculateTimeLeft = () => {
     
-        const difference = +new Date(`${2022}-04-22`) - +new Date();
+        const difference = +new Date(`${2022}-04-30`) - +new Date();
         let timeLeft = {};
     
         if (difference > 0) {
