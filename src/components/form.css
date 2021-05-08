@@ -1,6 +1,6 @@
 div.form-container {
     border: 4px solid #ff49f2;
-    padding: 10px;
+    padding: 40px;
     margin: auto;
     max-width: 768px;
     align-self: center;
@@ -18,15 +18,23 @@ div.form-container {
 }
 
 .guest-select{
-    max-width: 130px;
+    max-width: 190px;
     border: 2px solid #ff49f2; 
     border-radius: 4px;
+    height: 30px;
+    width: 190px;
+    background: transparent;
+    color: #7a7979;
 }
 
 .diet-select{
-    max-width: 130px;
+    max-width: 190px;
     border: 2px solid #ff49f2;
     border-radius: 4px; 
+    height: 30px;
+    width: 190px;
+    background: transparent;
+    color: #7a7979;
 }
 
 .styled-button {
