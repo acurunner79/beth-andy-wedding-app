@@ -1,5 +1,5 @@
 import React from 'react'
-import Select from 'react-select'
+// import Select from 'react-select'
 import './form.css'
 
 
@@ -18,20 +18,20 @@ const Form = (props) => {
       console.log(formData)
    }
 
-    const count = [
-        {label: 1},
-        {label: 2},
-        {label: 3},
-        {label: 4},
-        {label: 5},
-        {label: 6}
-    ]
+   //  const count = [
+   //      {label: 1},
+   //      {label: 2},
+   //      {label: 3},
+   //      {label: 4},
+   //      {label: 5},
+   //      {label: 6}
+   //  ]
 
-    const dinner = [
-        {label: 'Carnivore'},
-        {label: 'Vegetarian'},
-        {label: 'Vegan'}
-    ]
+   //  const dinner = [
+   //      {value: 'Carnivore', label: 'Carnivore'},
+   //      {label: 'Vegetarian'},
+   //      {label: 'Vegan'}
+   //  ]
 
     return (
         <>
@@ -61,21 +61,27 @@ const Form = (props) => {
                    value={formData?.email}
                    onChange={handleChange}
                 />*
-                <br></br>
+                {/* <br></br> */}
                    <h3>How many will be attending?</h3>
-                <Select className="guest-select"
-                   options={count}
-                />
-                <br></br>
+                <select className="guest-select" onChange={handleChange} name="guest" value={formData?.guest}>
+                   <option value="select">Select</option>
+                   <option value="1">1</option>
+                   <option value="2">2</option>
+                   <option value="3">3</option>
+                   <option value="4">4</option>
+                   <option value="5">5</option>
+                </select>
+                {/* <br></br> */}
                    <h3>Dietary Restrictions</h3>
-                <Select className="diet-select"
-                   type="submit"
-                   name="diet"
-                   options={dinner}
-                />
-            <button className="styled-button" type="submit"><h3>Submit</h3></button>
+                <select className="diet-select" onChange={handleChange} name="diet" value={formData?.diet}>
+                  <option value="select">Select</option>
+                  <option value="carnivore">Carnivore</option>
+                  <option value="vegetarian">Vegetarian</option>
+                  <option value="vegan">Vegan</option>
+                </select>
             </form>
         </div>
+            <button className="styled-button" type="submit"><h3>Submit</h3></button>
             </>
     )
 }
